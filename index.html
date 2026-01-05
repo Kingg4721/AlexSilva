@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Alex Silva — Portfolio</title>
+  <title>Alexandre Silva — Portfolio</title>
   <meta name="description" content="Unity Developer portfolio — projects, skills, and contact." />
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -21,22 +21,14 @@
   <main id="top" class="container">
     <section class="hero">
       <p class="badge">Unity Developer</p>
-      <h1>Hi, I’m <span class="accent">Alex Silva</span>.</h1>
+      <h1>Hi, I’m <span class="accent">Alexandre Silva</span>.</h1>
       <p class="sub">
-        I build gameplay systems, prototypes, and interactive experiences in Unity.
+        Unity developer focused on gameplay programming, and interactive systems.
       </p>
 
       <div class="actions">
         <a class="btn primary" href="#projects">View Projects</a>
         <a class="btn" href="#contact">Contact</a>
-      </div>
-
-      <div class="quick">
-        <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
-        <span class="dot">•</span>
-        <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
-        <span class="dot">•</span>
-        <a href="#" target="_blank" rel="noreferrer">CV (PDF)</a>
       </div>
     </section>
 
@@ -47,47 +39,57 @@
       </div>
 
       <div class="grid">
+        <!-- Project 1 -->
+        <article class="card">
+          <div class="thumb"></div>
+          <div class="card-body">
+            <h3>Ember Caves</h3>
+            <p>
+              2D pixel art dungeon platformer in Unity: explore platforms, avoid hazards like lava and traps,
+              and progress through portals between areas. Focused on responsive movement and atmosphere,
+              with a solid base to expand levels and mechanics.
+            </p>
+            <ul class="tags">
+              <li>Unity</li><li>C#</li>
+            </ul>
+            <div class="card-links">
+              <a href="https://github.com/Kingg4721/Ember-Caves" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
         <article class="card">
           <div class="thumb"></div>
           <div class="card-body">
             <h3>SteeringLab</h3>
-            <p>Sandbox for steering behaviors (seek, flee, arrive, flocking) with clean visuals.</p>
+            <p>
+              SteeringLab is a Unity project focused on implementing and experimenting with steering behaviors for autonomous agents.
+              It includes dedicated scenes for missiles, flocking, and intermittent movement (jellyfish), allowing you to test,
+              compare, and study different navigation and AI behaviors.
+            </p>
             <ul class="tags">
-              <li>Unity</li><li>C#</li><li>AI</li>
+              <li>Unity</li><li>C#</li><li>Steering Behaviors</li>
             </ul>
             <div class="card-links">
-              <a href="#" target="_blank" rel="noreferrer">GitHub</a>
-              <a href="#" target="_blank" rel="noreferrer">Video</a>
+              <a href="https://github.com/Kingg4721/SteeringLabs" target="_blank" rel="noreferrer">GitHub</a>
             </div>
           </div>
         </article>
 
-        <article class="card">
-          <div class="thumb"></div>
-          <div class="card-body">
-            <h3>Sliding Puzzle</h3>
-            <p>Dynamic grid puzzle with shuffle, touch support, and win detection.</p>
-            <ul class="tags">
-              <li>Unity</li><li>C#</li><li>UI</li>
-            </ul>
-            <div class="card-links">
-              <a href="#" target="_blank" rel="noreferrer">GitHub</a>
-              <a href="#" target="_blank" rel="noreferrer">Playable</a>
-            </div>
-          </div>
-        </article>
-
+        <!-- Project 3 -->
         <article class="card">
           <div class="thumb"></div>
           <div class="card-body">
             <h3>AR Prototype</h3>
-            <p>AR interaction prototype using tracked images and simple scene logic.</p>
+            <p>
+              AR interaction prototype using tracked images and simple scene logic.
+            </p>
             <ul class="tags">
               <li>Unity</li><li>ARFoundation</li><li>Mobile</li>
             </ul>
             <div class="card-links">
-              <a href="#" target="_blank" rel="noreferrer">GitHub</a>
-              <a href="#" target="_blank" rel="noreferrer">Demo</a>
+              <span style="opacity:.7;">Coming soon</span>
             </div>
           </div>
         </article>
@@ -102,8 +104,8 @@
 
       <div class="about">
         <p>
-          I’m a Unity Developer focused on gameplay programming, interactive prototypes, and clean UI.
-          I enjoy building systems like AI behaviors, puzzles, and AR experiences.
+          I’m a Unity Developer focused on gameplay programming and interactive systems. I enjoy building clean, testable projects
+          and experimenting with AI behaviors and gameplay mechanics.
         </p>
         <p>
           Currently looking for opportunities where I can contribute to real projects, learn fast, and ship polished features.
@@ -113,9 +115,10 @@
       <div class="skills">
         <span>Unity</span>
         <span>C#</span>
-        <span>Git/GitHub</span>
-        <span>UI</span>
+        <span>Git</span>
         <span>ARFoundation</span>
+        <span>UI</span>
+        <span>Steering Behaviors</span>
       </div>
     </section>
 
@@ -126,16 +129,21 @@
       </div>
 
       <div class="contact">
-        <a class="btn primary" href="mailto:your.email@example.com">your.email@example.com</a>
+        <p style="color: rgba(255,255,255,0.7); margin: 0;">
+          Contact info coming soon.
+        </p>
+
+        <!-- If you want to add links later, you can re-enable these:
         <div class="contact-links">
-          <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://github.com/Kingg4721" target="_blank" rel="noreferrer">GitHub</a>
           <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
         </div>
+        -->
       </div>
     </section>
 
     <footer class="footer">
-      <p>© <span id="year"></span> Alex Silva. Built with HTML/CSS.</p>
+      <p>© <span id="year"></span> Alexandre Silva. Built with HTML/CSS.</p>
     </footer>
   </main>
 
