@@ -39,52 +39,58 @@
       </div>
 
       <div class="grid">
-        <!-- Project 1 -->
+        <!-- Project 1: Ember Caves -->
         <article class="card">
-          <div class="thumb" style="background-image: url('assets/ember.png');"></div>
+          <button class="thumb thumb-btn" type="button" data-open-modal="modal-ember"
+            style="background-image: url('assets/ember.png');" aria-label="Open Ember Caves details"></button>
+
           <div class="card-body">
             <h3>Ember Caves</h3>
             <p>
-              2D pixel art dungeon platformer in Unity: explore platforms, avoid hazards like lava and traps,
-              and progress through portals between areas. Focused on responsive movement and atmosphere,
-              with a solid base to expand levels and mechanics.
+              A 2D pixel-art dungeon platformer in Unity. Explore platforms, avoid hazards like lava and traps,
+              and progress through doors between areas. Focused on gameplay mechanics, atmosphere,
+              and a solid base to expand with more levels and features.
             </p>
             <ul class="tags">
               <li>Unity</li><li>C#</li>
             </ul>
             <div class="card-links">
               <a href="https://github.com/Kingg4721/Ember-Caves" target="_blank" rel="noreferrer">GitHub</a>
+              <button class="link-btn" type="button" data-open-modal="modal-ember">Details</button>
             </div>
           </div>
         </article>
 
-        <!-- Project 2 -->
+        <!-- Project 2: SteeringLab -->
         <article class="card">
-          <div class="thumb" style="background-image: url('assets/steering.png');"></div>
+          <button class="thumb thumb-btn" type="button" data-open-modal="modal-steering"
+            style="background-image: url('assets/steering.png');" aria-label="Open SteeringLab details"></button>
+
           <div class="card-body">
             <h3>SteeringLab</h3>
             <p>
               SteeringLab is a Unity project focused on implementing and experimenting with steering behaviors for autonomous agents.
               It includes dedicated scenes for missiles, flocking, and intermittent movement (jellyfish), allowing you to test,
-              compare, and study different navigation and AI behaviors.
+              compare, and study navigation and AI behaviors.
             </p>
             <ul class="tags">
               <li>Unity</li><li>C#</li><li>Steering Behaviors</li>
             </ul>
             <div class="card-links">
               <a href="https://github.com/Kingg4721/SteeringLabs" target="_blank" rel="noreferrer">GitHub</a>
+              <button class="link-btn" type="button" data-open-modal="modal-steering">Details</button>
             </div>
           </div>
         </article>
 
-        <!-- Project 3 -->
+        <!-- Project 3 (optional): keep a placeholder) -->
         <article class="card">
           <div class="thumb"></div>
           <div class="card-body">
             <h3>Future Project</h3>
             <p>
               A future Unity project currently in planning. This slot will be updated soon with a new prototype,
-              including a short overview, features, and links.
+              including an overview, features, and links.
             </p>
             <ul class="tags">
               <li>Unity</li><li>In Progress</li><li>Prototype</li>
@@ -140,8 +146,227 @@
     </footer>
   </main>
 
+  <!-- MODAL: Ember Caves -->
+  <div class="modal-overlay" id="modal-ember" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Ember Caves details">
+    <div class="modal">
+      <button class="modal-close" type="button" data-close-modal aria-label="Close">×</button>
+
+      <div class="modal-media" style="background-image:url('assets/ember.png');"></div>
+
+      <div class="modal-content">
+        <h3>Ember Caves</h3>
+
+        <div class="modal-section">
+          <h4>Description</h4>
+          <p class="modal-text">
+            A 2D pixel-art dungeon platformer in Unity. Explore platforms, avoid hazards such as lava and traps,
+            and progress through doors between areas. The project focuses on mechanics (movement, gravity inversion, damage, animation,
+            inventory, and statue interaction), atmosphere, and a foundation to expand with new levels and features.
+          </p>
+        </div>
+
+        <div class="modal-section">
+          <h4>Video</h4>
+          <div class="video-wrap">
+            <iframe
+              src="https://www.youtube.com/embed/Hd0owzCieKI"
+              title="Ember Caves Video"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+
+        <div class="modal-section">
+          <h4>What I did</h4>
+          <ul class="modal-list">
+            <li><strong>Mechanics:</strong> Movement, traps, moving environment parts, gravity inversion, damage system.</li>
+            <li><strong>Obstacles:</strong> Implemented all obstacles (spikes, lava, lava drops, etc.).</li>
+            <li><strong>Tilemaps:</strong> Built the tilemaps (art not created by me).</li>
+            <li><strong>Character & animations:</strong> Created character animations and death fade in/out (art not created by me).</li>
+          </ul>
+        </div>
+
+        <div class="modal-section">
+          <h4>Project Info</h4>
+          <div class="info-grid">
+            <div class="info-row">
+              <span class="info-label">Technologies</span>
+              <span class="info-value">Unity</span>
+            </div>
+            <div class="info-row">
+              <span class="info-label">Languages</span>
+              <span class="info-value">C#</span>
+            </div>
+            <div class="info-row">
+              <span class="info-label">Download</span>
+              <span class="info-value">
+                <a href="https://github.com/Kingg4721/Ember-Caves" target="_blank" rel="noreferrer">GitHub Repository</a>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-section">
+          <h4>Prints</h4>
+          <div class="prints-grid">
+            <a class="print" href="assets/ember.png" target="_blank" rel="noreferrer">
+              <img src="assets/ember.png" alt="Ember Caves screenshot 1" />
+            </a>
+
+            <!-- Add more later (upload to /assets and uncomment)
+            <a class="print" href="assets/ember2.png" target="_blank" rel="noreferrer">
+              <img src="assets/ember2.png" alt="Ember Caves screenshot 2" />
+            </a>
+            -->
+          </div>
+        </div>
+
+        <div class="modal-actions">
+          <a class="btn primary" href="https://github.com/Kingg4721/Ember-Caves" target="_blank" rel="noreferrer">Open on GitHub</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL: SteeringLab -->
+  <div class="modal-overlay" id="modal-steering" aria-hidden="true" role="dialog" aria-modal="true" aria-label="SteeringLab details">
+    <div class="modal">
+      <button class="modal-close" type="button" data-close-modal aria-label="Close">×</button>
+
+      <div class="modal-media" style="background-image:url('assets/steering.png');"></div>
+
+      <div class="modal-content">
+        <h3>SteeringLab</h3>
+
+        <div class="modal-section">
+          <h4>Description</h4>
+          <p class="modal-text">
+            SteeringLab is a Unity project focused on implementing and experimenting with steering behaviors for autonomous agents.
+            It includes dedicated scenes for missiles, flocking, and intermittent movement (jellyfish), allowing you to test,
+            compare, and study different navigation and AI behaviors.
+          </p>
+        </div>
+
+        <div class="modal-section">
+          <h4>Video</h4>
+          <div class="video-wrap">
+            <iframe
+              src="https://www.youtube.com/embed/cUKrjgVRtms"
+              title="SteeringLab Video"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+
+        <div class="modal-section">
+          <h4>What I did</h4>
+          <ul class="modal-list">
+            <li><strong>Mechanics:</strong> Pursuit, Flocking, Flee, obstacle avoidance.</li>
+            <li><strong>UI:</strong> Built a simple UI for controlling/testing behaviors.</li>
+            <li><strong>In progress:</strong> Jellyfish steering behavior is not implemented yet.</li>
+          </ul>
+        </div>
+
+        <div class="modal-section">
+          <h4>Project Info</h4>
+          <div class="info-grid">
+            <div class="info-row">
+              <span class="info-label">Technologies</span>
+              <span class="info-value">Unity</span>
+            </div>
+            <div class="info-row">
+              <span class="info-label">Languages</span>
+              <span class="info-value">C#</span>
+            </div>
+            <div class="info-row">
+              <span class="info-label">Based on paper</span>
+              <span class="info-value">
+                <a href="https://d1wqtxts1xzle7.cloudfront.net/39309478/gdc99steer-libre.pdf?1445306106=&response-content-disposition=inline%3B+filename%3DSteering_Behaviors_For_Autonomous_Charac.pdf"
+                   target="_blank" rel="noreferrer">Steering Behaviors for Autonomous Characters (PDF)</a>
+              </span>
+            </div>
+            <div class="info-row">
+              <span class="info-label">Download</span>
+              <span class="info-value">
+                <a href="https://github.com/Kingg4721/SteeringLabs" target="_blank" rel="noreferrer">GitHub Repository</a>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-section">
+          <h4>Prints</h4>
+          <div class="prints-grid">
+            <a class="print" href="assets/steering.png" target="_blank" rel="noreferrer">
+              <img src="assets/steering.png" alt="SteeringLab screenshot 1" />
+            </a>
+
+            <!-- Add more later (upload to /assets and uncomment)
+            <a class="print" href="assets/steering2.png" target="_blank" rel="noreferrer">
+              <img src="assets/steering2.png" alt="SteeringLab screenshot 2" />
+            </a>
+            -->
+          </div>
+        </div>
+
+        <div class="modal-actions">
+          <a class="btn primary" href="https://github.com/Kingg4721/SteeringLabs" target="_blank" rel="noreferrer">Open on GitHub</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script>
+    // year
     document.getElementById("year").textContent = new Date().getFullYear();
+
+    // modal logic
+    const openButtons = document.querySelectorAll("[data-open-modal]");
+    const overlays = document.querySelectorAll(".modal-overlay");
+
+    function openModal(id) {
+      const overlay = document.getElementById(id);
+      if (!overlay) return;
+      overlay.classList.add("is-open");
+      overlay.setAttribute("aria-hidden", "false");
+      document.body.classList.add("no-scroll");
+
+      const closeBtn = overlay.querySelector("[data-close-modal]");
+      if (closeBtn) closeBtn.focus();
+    }
+
+    function closeModal(overlay) {
+      overlay.classList.remove("is-open");
+      overlay.setAttribute("aria-hidden", "true");
+      document.body.classList.remove("no-scroll");
+    }
+
+    openButtons.forEach(btn => {
+      btn.addEventListener("click", () => openModal(btn.getAttribute("data-open-modal")));
+    });
+
+    overlays.forEach(overlay => {
+      // close button
+      overlay.querySelectorAll("[data-close-modal]").forEach(btn => {
+        btn.addEventListener("click", () => closeModal(overlay));
+      });
+
+      // click outside modal closes
+      overlay.addEventListener("click", (e) => {
+        if (e.target === overlay) closeModal(overlay);
+      });
+    });
+
+    // ESC closes the currently open modal (optional but nice)
+    document.addEventListener("keydown", (e) => {
+      if (e.key !== "Escape") return;
+      const openOverlay = document.querySelector(".modal-overlay.is-open");
+      if (openOverlay) closeModal(openOverlay);
+    });
   </script>
 </body>
 </html>
