@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Alexandre Silva — Portfolio</title>
   <meta name="description" content="Unity Developer portfolio — projects, skills, and contact." />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css?v=2" />
 </head>
 
 <body>
@@ -39,7 +39,7 @@
       </div>
 
       <div class="grid">
-        <!-- Project 1: Ember Caves -->
+        <!-- Ember Caves -->
         <article class="card">
           <button class="thumb thumb-btn" type="button" data-open-modal="modal-ember"
             style="background-image: url('assets/ember.png');" aria-label="Open Ember Caves details"></button>
@@ -61,7 +61,7 @@
           </div>
         </article>
 
-        <!-- Project 2: SteeringLab -->
+        <!-- SteeringLab -->
         <article class="card">
           <button class="thumb thumb-btn" type="button" data-open-modal="modal-steering"
             style="background-image: url('assets/steering.png');" aria-label="Open SteeringLab details"></button>
@@ -83,20 +83,20 @@
           </div>
         </article>
 
-        <!-- Project 3 (optional): keep a placeholder) -->
+        <!-- Placeholder -->
         <article class="card">
           <div class="thumb"></div>
           <div class="card-body">
             <h3>Future Project</h3>
             <p>
-              A future Unity project currently in planning. This slot will be updated soon with a new prototype,
-              including an overview, features, and links.
+              A future Unity project currently in planning. This slot will be updated soon with an overview,
+              features, and links.
             </p>
             <ul class="tags">
               <li>Unity</li><li>In Progress</li><li>Prototype</li>
             </ul>
             <div class="card-links">
-              <span style="opacity:.7;">Coming soon</span>
+              <span class="muted">Coming soon</span>
             </div>
           </div>
         </article>
@@ -135,9 +135,7 @@
       </div>
 
       <div class="contact">
-        <p style="color: rgba(255,255,255,0.7); margin: 0;">
-          Contact info coming soon.
-        </p>
+        <p class="muted">Contact info coming soon.</p>
       </div>
     </section>
 
@@ -173,8 +171,7 @@
               title="Ember Caves Video"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen>
-            </iframe>
+              allowfullscreen></iframe>
           </div>
         </div>
 
@@ -214,12 +211,6 @@
             <a class="print" href="assets/ember.png" target="_blank" rel="noreferrer">
               <img src="assets/ember.png" alt="Ember Caves screenshot 1" />
             </a>
-
-            <!-- Add more later (upload to /assets and uncomment)
-            <a class="print" href="assets/ember2.png" target="_blank" rel="noreferrer">
-              <img src="assets/ember2.png" alt="Ember Caves screenshot 2" />
-            </a>
-            -->
           </div>
         </div>
 
@@ -257,8 +248,7 @@
               title="SteeringLab Video"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen>
-            </iframe>
+              allowfullscreen></iframe>
           </div>
         </div>
 
@@ -304,12 +294,6 @@
             <a class="print" href="assets/steering.png" target="_blank" rel="noreferrer">
               <img src="assets/steering.png" alt="SteeringLab screenshot 1" />
             </a>
-
-            <!-- Add more later (upload to /assets and uncomment)
-            <a class="print" href="assets/steering2.png" target="_blank" rel="noreferrer">
-              <img src="assets/steering2.png" alt="SteeringLab screenshot 2" />
-            </a>
-            -->
           </div>
         </div>
 
@@ -321,10 +305,8 @@
   </div>
 
   <script>
-    // year
     document.getElementById("year").textContent = new Date().getFullYear();
 
-    // modal logic
     const openButtons = document.querySelectorAll("[data-open-modal]");
     const overlays = document.querySelectorAll(".modal-overlay");
 
@@ -334,9 +316,6 @@
       overlay.classList.add("is-open");
       overlay.setAttribute("aria-hidden", "false");
       document.body.classList.add("no-scroll");
-
-      const closeBtn = overlay.querySelector("[data-close-modal]");
-      if (closeBtn) closeBtn.focus();
     }
 
     function closeModal(overlay) {
@@ -350,18 +329,15 @@
     });
 
     overlays.forEach(overlay => {
-      // close button
       overlay.querySelectorAll("[data-close-modal]").forEach(btn => {
         btn.addEventListener("click", () => closeModal(overlay));
       });
 
-      // click outside modal closes
       overlay.addEventListener("click", (e) => {
         if (e.target === overlay) closeModal(overlay);
       });
     });
 
-    // ESC closes the currently open modal (optional but nice)
     document.addEventListener("keydown", (e) => {
       if (e.key !== "Escape") return;
       const openOverlay = document.querySelector(".modal-overlay.is-open");
